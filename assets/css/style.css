@@ -1,10 +1,3 @@
-/**
-* Template Name: Mentor
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -403,7 +396,8 @@ h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: url("../img/Images/nankana_front.jpeg") top center;
+  background:linear-gradient(rgba(0, 0, 0, 0.3),
+  rgba(0, 0, 0, 0.3)), url("../img/Images/nankana_front.jpeg") top center;
   background-size: cover;
   position: relative;
 }
@@ -428,8 +422,8 @@ h6 {
   }
 }
 #nankana_logo img{
-  height: 63px;
-  width: 226px;
+  height: 68px;
+  width: 257px;
   margin-right:50px;
 }
 #hero h1 {
@@ -596,7 +590,7 @@ section {
 }
 .fst-italic{
   font-size: 17.5px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-style: normal!important;
   color: #000000;
 }
@@ -1466,10 +1460,20 @@ section {
   font-size: 14px;
   background: #eef0ef;
 }
-
+#footer_logo_img img{
+  height: 100px;
+  width: 320px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #f9faf9;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+  rgba(0, 0, 0, 0.7)),url("../img/Images/footer_img.png");
+  /* background: #0f8a0f; */
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 #footer .footer-top .footer-contact {
@@ -1485,34 +1489,38 @@ section {
 }
 
 #footer .footer-top .footer-contact p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
-  color: #777777;
+  color: #ffffff;
 }
 
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #444444;
+  color: #f7f7f7;
   position: relative;
   padding-bottom: 12px;
 }
 
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
+  margin-left: 150px;
+  font-size: 19px;
 }
 
 #footer .footer-top .footer-links ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  font-size: 17px;
+  
 }
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #5fcf80;
+  color: #0586c2;
   font-size: 18px;
   line-height: 1;
 }
@@ -1528,7 +1536,8 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #777777;
+  color: #faf7f7;
+  font-weight: bolder;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -1536,7 +1545,7 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #5fcf80;
+  color:#0586c2;
 }
 
 #footer .footer-newsletter {
@@ -1591,33 +1600,32 @@ section {
   padding-top: 5px;
   font-size: 13px;
 }
-
 #footer .credits a {
-  color: #3ac162;
+  color: #0586c2;
   transition: 0.3s;
 }
 
 #footer .credits a:hover {
-  color: #5fcf80;
+  color: #ff3115;
 }
 
 #footer .social-links a {
-  font-size: 18px;
+  font-size: 20px;
   display: inline-block;
-  background: #5fcf80;
+  background: #0586c2;
   color: #fff;
   line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
+  padding: 10px 0;
+  margin-right: 6px;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   transition: 0.3s;
 }
 
 #footer .social-links a:hover {
-  background: #3ac162;
+  background: #ff3115;
   color: #fff;
   text-decoration: none;
 }
