@@ -15,8 +15,8 @@
       $is_admin = 0;
       foreach($result as $row) $is_admin = $row['is_admin'];
       
-      if($is_admin == 1) header('Location: admin_dash.php');
-      elseif($is_admin == 0) header('Location: student_dash.php');
+      if($is_admin == 1) header('Location: dash_admin.php');
+      elseif($is_admin == 0) header('Location: dash_student.php');
 
     } else {
       echo "invalid cred";

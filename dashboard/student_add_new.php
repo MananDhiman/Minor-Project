@@ -74,17 +74,40 @@
       <div class="row">
         <div class="col">
           Class<br>
-          <input type="text" class="form-control" placeholder="Nursery, UKG, 5, 12" name="class" required>
+          <!-- <input type="text" class="form-control" placeholder="Nursery, UKG, 5, 12" name="class" required> -->
+          <select class="form-select" name="class">
+            <option value="Nursery">Nursery</option>
+            <option value="LKG">LKG</option>
+            <option value="UKG">UKG</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
         </div>
         <div class="col">
           Section<br>
-          <input type="text" class="form-control" placeholder="A, B, C, D" name="section" required>
+          <!-- <input type="text" class="form-control" placeholder="A, B, C, D" name="section" required> -->
+          <select class="form-select" name="section">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+          </select>
         </div>
       </div>
       <br>
       <button type="submit" class="btn btn-success" name="submit">Add New Student</button>
     </form>
-    <a href="index.php"><button type="submit" class="btn btn-danger">Cancel</button></a>
+    <a href="dash_admin.php"><button type="submit" class="btn btn-danger">Cancel</button></a>
 
   </div>
 

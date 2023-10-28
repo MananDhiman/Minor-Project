@@ -11,7 +11,7 @@
 
     if($result->num_rows > 0){
       echo "
-        <table class='table table-striped table-hover'>
+        <table class='table table-striped table-hover' id='student_table'>
           <thead>
             <tr>
               <th scope='col'>Admission Number</th>
@@ -32,6 +32,7 @@
                 <td>{$row['class']}</td>
                 <td>{$row['section']}</td>
                 <td>{$row['dob']}</td>
+                <td><a href='student_manage.php?id={$row['admission_no']}'><button class='btn btn-info btn-sm'>Marks</button></a></td>
               </tr>
             ";
           }
