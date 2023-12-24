@@ -27,19 +27,30 @@
 
 <html>
 <head>
-  <title>Nankana Public School Dashboard</title>
+  <title> Dashboard</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    
-  </style> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./components/css/index.css">
 </head>
 <body>
 
-  <h1 class="text-center">Nankanka Public School Dashboard</h1>
-  <br>
+  <h1 class="text-center" id="h1">Guru Nanak Dev Enginnering  <br>College Dashboard</h1>
+  <div id="algn">
+    <div id="container">
+        <p class="head" id="login_heading" >Login</p>
+        <form action="" method="POST" class="input-container">
+            <input type="text" placeholder=" Username" id="username" name="username" class="inpt" required>
+            <input type="password" placeholder="*********" id="password" name="password" class="inpt" required>
+            <button type="submit" class="btn" name="submit">Login</button>
+        </form>
+
+    </div>
+    </div>
   <div class="container col-4">
   
-    <!-- LOGIN FORM -->
+    <!-- LOGIN FORM
     <form action="" method="POST">
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Username</label>
@@ -52,7 +63,7 @@
       
       <button type="submit" class="btn btn-primary" name="submit">Login</button>
     </form>
-  </div>
+  </div> -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/vendor/jquery-3.7.1.min.js"></script>

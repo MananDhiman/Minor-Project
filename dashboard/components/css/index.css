@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    position: relative; /* Ensure the body has a position for the pseudo-element */
+
+    /* Other styles for the body */
+
+}
+
+body::before {
+    content: "";
+    background-image: url(../../../assets/img/about/about-us.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    filter: brightness(0.5); /* Adjust the value between 0 and 1 for desired brightness */
+    z-index: -1; /* Position behind other content */
+}
+
+#h1{
+    position: relative;
+    top: 10%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+}
+
+#login_heading{
+    font-family: 'Oswald', sans-serif;
+}
+
+#algn{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 10%;
+}
+
+#container{
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 320px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+#container .head{
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0%  !important;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    width: 265px;
+}
+
+.input-container .inpt{
+    padding: 10px;
+    margin: 5px 10px;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: transparent;
+    color: white;
+}
+
+::placeholder {
+    font-weight: 600;
+    color: white;
+    opacity: 1;
+}
+
+
+.input-container .btn{
+    margin: 16px 12px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: red;
+    font-weight: bolder;
+
+}
+
+.input-container .btn:hover{
+    background-color: #ffc3d2;
+    color: black;
+}
+
+#container .footer{
+    font-size: 11px;
+    font-weight: 400;
+}
+
+#container .footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    margin: 0 5px;
+}
+
+#container .footer a:hover{
+    color: #ffc3d2;
+}
