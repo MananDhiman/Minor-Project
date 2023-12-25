@@ -3,7 +3,7 @@
 
   global $conn;
 
-  $sql = "SELECT * FROM students;";
+  $sql = "SELECT * FROM students LIMIT 50;";
   $result = $conn->query($sql);
   
   function displayTable() {
@@ -32,6 +32,7 @@
                 <td>{$row['class']}</td>
                 <td>{$row['section']}</td>
                 <td>{$row['dob']}</td>
+                <td><button class='btn btn-primary btn-sm' onclick='genIDCard({$row['admission_no']})'>ID Card</button></td>
                 <td><a href='student_manage.php?id={$row['admission_no']}'><button class='btn btn-info btn-sm'>Marks</button></a></td>
               </tr>
             ";
@@ -59,7 +60,8 @@
     <?php require_once('./components/navbar.php'); ?>
     <br>
 
-    <!-- ADD NEW STUDENT BUTTON -->
+    <!-- ADD NEW STUDENT BUTTON  -->
+    <button type="button" class="btn btn-primary" onclick="genIDCard()">Generate ID Cards</button>
     <a href="./student_add_new.php"><button type="button" class="btn btn-warning">Add New Student</button></a>
     <br>
 
@@ -67,7 +69,18 @@
     <?php displayTable(); ?>
 
   </div>
-
+  <script>
+    function genIDCard() {
+      if(confirm("Are you sure you want to generate ID Cards of all students?")) {
+        window.location.replace("./generate_id_card.php");
+      }
+    }
+    function genIDCard(admissionNo) {
+      if(confirm("Are you sure you want to generate ID Card of this student?")) {
+        window.location.replace("./generate_id_card.php?admission_no="+admissionNo);
+      }
+    }
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
